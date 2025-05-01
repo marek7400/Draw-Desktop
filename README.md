@@ -4,5 +4,4 @@ v72 in progress
 ![v61 in progress](images/v61-bga.jpg)
 arrows and show angle option:
 ![arrow_angle](images/arrows_angle.jpg)
-arrows_angle.jpg
 
