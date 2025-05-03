@@ -3,6 +3,7 @@ in progress...
 v61
 ![v61 in progress](images/v61-bga.jpg)
 
+v72
 ![v72 in progress](images/v72.jpg)
 
 arrows and show angle option (v72)
