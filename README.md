@@ -28,4 +28,14 @@ v109
 
 ![v109 in progress](images/v109.png)
 
+v109 draw on image
+
+![v109 in progress](images/IMG-saruman.jpg)
+
+v109 dimension
+![v109 in progress](images/dimension1.jpg)
+
+![v109 in progress](images/dimension2.jpg)
+
+
 
