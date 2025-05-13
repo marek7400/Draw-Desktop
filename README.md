@@ -37,5 +37,6 @@ v109 dimension
 
 ![v109 in progress](images/dimension2.jpg)
 
-
-
+v117 animation new settings
+![v117 in progress](images/anim-settings-CLR.gif)
+![v117 in progress](images/anim-clock.gif)
