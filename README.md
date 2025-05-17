@@ -48,3 +48,11 @@ v117 animation new settings
 
 v137
 ![v137 in progress](images/v137.jpg)
+
+v140
+
+-grouping of shapes
+
+-spline Bézier curve
+
+![v140 in progress](images/v140.png)
