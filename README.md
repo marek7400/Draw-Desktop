@@ -1,5 +1,10 @@
 in progress...
 
+beginning 
+v1 and v3
+
+![v1&v3 in progress](images/v1v3.jpg)
+
 v61
 ![v61 in progress](images/v61-bga.jpg)
 
