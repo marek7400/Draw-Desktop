@@ -56,3 +56,17 @@ v140
 -spline Bézier curve
 
 ![v140 in progress](images/v140.png)
+
+v154
+
+More notifications info in left-up corner, Grip, Snap2Grip
+
+![v154 in progress](images/v154_grip.jpg)
+
+Own auxiliary lines (Rulers), Snap2Lines
+
+![v154 in progress](images/v154_lines.jpg)
+
+Snap2Point, save window position
+
+![v154 in progress](images/v154_snap2point.jpg)
