@@ -59,7 +59,7 @@ v140
 
 ![v140 in progress](images/v140.png)
 
-v154
+v154 (v155 add EXIT button and fix end process)
 
 More notifications info in left-up corner, Grip, Snap2Grip
 
