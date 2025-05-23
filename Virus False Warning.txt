@@ -1,0 +1,15 @@
+VirusTotal website and antivirus on your computer may detect (FALSE) the file as a virus.
+
+This is due to, among other things, the libraries used and the “hook” tools used by the program to make the keyboard shortcuts work. 
+
+In the package with the program will be included pure PYTHON code, you can check the code yourself and turn it into an exe or run the script itself (as someone has Python installed).
+
+It is possible to report that it is a false alarm, but you have to write to each antivirus vendor separately (and I don't want to).
+**************************************************
+Witryna VirusTotal i program antywirusowy na komputerze mogą wykryć (FAŁSZYWIE) plik jako wirusa.
+
+Wynika to między innymi z użytych bibliotek i narzędzi „hook” używanych przez program do działania skrótów klawiaturowych. 
+
+W paczce z programem będzie dołączony czysty kod PYTHON, można samemu sprawdzić kod i przekształcić go w exe lub uruchomić sam skrypt (jak ktoś ma zainstalowanego Pythona).
+
+Jest możliwość zgłoszenia, że to fałszywy alarm, ale trzeba pisać do każdego dostawcy antywirusa z osobna (a mi się nie chce).
