@@ -186,7 +186,7 @@ v140
 
 ![v140 in progress](images/v140.png)
 
-v154 (v155 add EXIT button and fix end process)
+v154
 
 More notifications info in left-up corner, Grip, Snap2Grip
 
@@ -199,3 +199,10 @@ Own auxiliary lines (Rulers), Snap2Lines
 Snap2Point, save window position
 
 ![v154 in progress](images/v154_snap2point.jpg)
+
+v155 
+
+add EXIT button, add "dark mode" and fix end process on exit)
+
+![v155 in progress](images/dark_mode.png)
+
