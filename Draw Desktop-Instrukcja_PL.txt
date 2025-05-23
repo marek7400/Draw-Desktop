@@ -1,0 +1,671 @@
+Draw Desktop - Instrukcja Obsługi
+
+Witamy w Draw Desktop! Ten program pozwala na rysowanie bezpośrednio na pulpicie lub w dedykowanych trybach tablicy. Poniższa instrukcja pomoże Ci zrozumieć wszystkie jego funkcje.
+
+1. Omówienie Opcji Głównego Panelu
+
+Ta sekcja opisuje opcje dostępne w górnej części panelu sterowania, które wpływają na globalne ustawienia rysowania lub narzędzi.
+
+Transparency (Przezroczystość):
+
+Ustawia ogólną przezroczystość (krycie) rysowanych kształtów.
+
+Zakres: 0% (całkowicie przezroczyste) do 100% (całkowicie nieprzezroczyste).
+
+Skrót: Shift + PageUp/Down.
+
+Thickness (Grubość):
+
+Określa grubość linii dla konturów kształtów oraz dla narzędzi takich jak Linia, Strzałka, Wielokąt itp. (w pikselach).
+
+Zakres: 1 do 50 pikseli.
+
+Skrót (bez zaznaczenia): Numpad +/-.
+
+Arrow Head (Grot Strzałki):
+
+Ustawia rozmiar grotu dla narzędzia Strzałka oraz dla stylów strzałek w narzędziach "Line Point" i "Spline".
+
+Zakres: 1 do 100 pikseli.
+
+Skrót: Ctrl + PageUp/Down.
+
+Brush Size (Rozmiar Pędzla):
+
+Określa grubość śladu dla narzędzia Pędzel (Brush).
+
+Zakres: 1 do 100 pikseli.
+
+Skrót: Alt + PageUp/Down.
+
+Time (s) (Czas):
+
+Dotyczy tylko trybu TEMP. Określa, jak długo (w sekundach) narysowany kształt pozostanie widoczny, zanim zniknie.
+
+Zakres: 0.1 do 60.0 sekund (z dokładnością do 3 miejsc po przecinku).
+
+Style (Styl Linii):
+
+Lista rozwijana pozwalająca wybrać styl linii dla rysowanych kształtów (np. Solid, Dash, Dot, Dash Dot, oraz różne warianty Custom Dash).
+
+Skrót: Ctrl+Shift + PageUp/Down.
+
+Fill Shapes (Wypełnij Kształty):
+
+Checkbox. Jeśli zaznaczony, kształty zamknięte (jak Prostokąt, Elipsa, Trójkąt, Wielokąt, Trapez, Wielokąt Regularny, Łuk, MPoint) będą wypełniane jednolitym kolorem (lub gradientem, jeśli zdefiniowany).
+
+Skrót (dla zaznaczonych kształtów): Numpad /.
+
+Przycisk ZOOM:
+
+Włącza/wyłącza systemową Lupę Windows.
+
+Przy pierwszym użyciu może pojawić się informacja o konieczności skonfigurowania Lupy.
+
+Do automatycznego zamykania Lupy wymagany jest moduł PyAutoGUI. Jeśli go brakuje, Lupa nie zostanie automatycznie zamknięta przyciskiem ani przy zamykaniu programu.
+
+Hatch Fill (Wypełnienie Kreskowaniem) + Opcje:
+
+Grupa kontrolek pozwalająca na dodanie wypełnienia kreskowaniem do kształtów (zamiast lub oprócz jednolitego wypełnienia).
+
+Checkboxy:
+
+/: Kreskowanie ukośne do przodu (Skrót: /).
+
+\: Kreskowanie ukośne do tyłu (Skrót: \).
+
+—: Kreskowanie poziome (Skrót: _ czyli Shift + -).
+
+|: Kreskowanie pionowe (Skrót: | czyli Shift + \).
+
+T: [SpinBox]px: Grubość linii kreskowania.
+
+[Przycisk Koloru]: Kolor linii kreskowania.
+
+Division Settings (Ustawienia Podziału) + Opcje:
+
+Grupa kontrolek do wizualizacji podziału segmentów kształtów na równe części.
+
+Divide (V): Checkbox włączający/wyłączający pokazywanie punktów podziału (Skrót: V).
+
+[SpinBox]: Liczba części, na które segment ma być podzielony (minimum 2).
+
+[Przycisk Koloru]: Kolor punktów podziału.
+
+Size: [SpinBox]px: Średnica punktów podziału.
+
+Lines (Linie Pomocnicze) + Set.L (Ustaw.L):
+
+Lines (Checkbox): Włącza/wyłącza widoczność linii pomocniczych (poziomych i pionowych linijek oraz prowadnic). Skrót: Alt+Shift+Home.
+
+Set.L (Przycisk): Otwiera okno dialogowe "Ustawienia Linii Pomocniczych", gdzie można skonfigurować grubość, kolor i przezroczystość prowadnic, a także zmienić pozycję linijek na ekranie lub wyczyścić wszystkie prowadnice.
+
+Grid (Siatka) + Set.G (Ustaw.G):
+
+Grid (Checkbox): Włącza/wyłącza widoczność siatki na pulpicie. Skrót: Ctrl+Alt+F10.
+
+Set.G (Przycisk): Otwiera okno "Ustawienia Siatki", pozwalające na szczegółową konfigurację siatki, w tym:
+Tryb siatki: podział według liczby sekcji lub według rozmiaru komórki.
+Liczbę wierszy i kolumn (dla trybu sekcji).
+Rozmiar komórek (szerokość i wysokość w pikselach, dla trybu rozmiaru komórki).
+Kolor, przezroczystość i grubość linii poziomych i pionowych (osobno dla obu trybów).
+Przesunięcie (offset X, Y) całej siatki.
+Wyświetlanie kropek w centrach sekcji/komórek, ich rozmiar i kolor.
+
+Snapping Mode (Tryb Przyciągania) + Opcje:
+
+Grupa przycisków radiowych określająca, do czego będą przyciągane rysowane punkty lub kursor podczas tworzenia kształtów:
+
+S2L (Snap to Lines): Przyciąganie do aktywnych Linii Pomocniczych. (Skrót: Alt+Shift+F1)
+S2G (Snap to Grid): Przyciąganie do linii lub przecięć Siatki. (Skrót: Alt+Shift+F2)
+S2A (Snap to All): Przyciąganie do kluczowych punktów (wierzchołki, środki, punkty podziału) istniejących kształtów, a także do Linii Pomocniczych i Siatki, jeśli są aktywne. (Skrót: Alt+Shift+F3)
+OFF: Wyłącza przyciąganie. (Skrót: Alt+Shift+F4)
+Sens: [SpinBox]px: Czułość przyciągania w pikselach. Określa, jak blisko elementu musi znaleźć się kursor, aby nastąpiło przyciągnięcie.
+
+Dimm (Przyciemnij):
+
+Checkbox. Jeśli zaznaczony, tło pulpitu zostanie lekko przyciemnione podczas rysowania w trybie Normal Draw (nie dotyczy trybów BOARD, EDIT, TEMP). Pomaga to lepiej widzieć rysowane elementy.
+
+Clear W. (Ostrzeżenie o Czyszczeniu):
+
+Checkbox. Jeśli zaznaczony, program zapyta o potwierdzenie przed wyczyszczeniem zawartości tablicy podczas wychodzenia z trybu BOARD lub EDIT.
+
+Przycisk HIDE/SHOW:
+
+Przełącza widoczność wszystkich narysowanych kształtów.
+
+Skrót: H.
+
+Show Indicators (Pokaż Wskaźniki):
+
+Checkbox. Jeśli zaznaczony, w rogach ekranu będą wyświetlane informacje o aktywnym trybie, narzędziu, kolorze, grubości linii, stylu i przezroczystości.
+
+Center (Środek):
+
+Checkbox. Jeśli zaznaczony, na środku rysowanych kształtów (np. linii, prostokątów) będzie wyświetlany mały punkt wskazujący ich geometryczny lub wizualny środek.
+
+Skrót: C.
+
+Przycisk ? (Informacje):
+
+Wyświetla okno z informacjami o autorze programu.
+
+2. Omówienie Rysowania "Narzędziami"
+
+Sekcja "Tools" zawiera listę dostępnych narzędzi do rysowania. Wybierz narzędzie, klikając na jego nazwę.
+
+Rectangle (R) (Prostokąt): Rysuje prostokąty.
+
+Ellipse (E) (Elipsa): Rysuje elipsy i koła.
+
+Triangle (T) (Trójkąt): Rysuje trójkąty.
+
+Arc (U) (Łuk): Rysuje łuki eliptyczne.
+
+Trapeze (Z) (Trapez): Rysuje trapezy.
+
+Line Single (L) (Linia Pojedyncza): Rysuje pojedyncze odcinki linii.
+
+Line Point (M) (Linia Wskazywana): Rysuje łamane linie, punkt po punkcie. Zakończ rysowanie klikając PPM, Esc lub podwójnym kliknięciem LPM blisko punktu startowego.
+
+Arrow (A) (Strzałka): Rysuje strzałki.
+
+Polygon (P) (Wielokąt): Rysuje wielokąty, punkt po punkcie. Zakończ rysowanie klikając PPM, Esc lub podwójnym kliknięciem LPM blisko punktu startowego.
+
+Spline (S) (Krzywa Sklejana): Rysuje krzywe sklejane (Béziera). LPM dodaje punkty kontrolne. PPM lub podwójny LPM kończy krzywą. Esc anuluje.
+
+Reg. Polygon (W) (Wielokąt Regularny): Rysuje wielokąty foremne.
+
+M.Point (O) (Punkt Pomiarowy): Stawia znaczniki (kółka/kwadraty) z opcjonalnymi etykietami.
+
+Angle (>) (Kąt): Narzędzie do rysowania i wyświetlania wartości kątów. Wymaga 3 kliknięć: punkt A, wierzchołek O, punkt B.
+
+Brush (B) (Pędzel): Rysuje odręczne linie o grubości zdefiniowanej w "Brush Size".
+
+Text (X) (Tekst): Pozwala na dodawanie tekstu. Kliknij lub przeciągnij, aby zdefiniować obszar, a następnie pojawi się okno dialogowe do wpisania tekstu i ustawienia jego właściwości.
+
+Dimension (Q) (Wymiarowanie): Narzędzie do tworzenia linii wymiarowych.
+
+Kliknij LPM, aby ustawić pierwszy punkt wymiaru.
+
+Kliknij LPM, aby ustawić drugi punkt wymiaru.
+
+Kliknij LPM, aby ustawić odsunięcie linii wymiarowej i tekstu.
+
+Esc lub PPM anuluje bieżące wymiarowanie.
+
+a. Rysowanie z Klawiszami Modyfikującymi
+
+Shift (podczas rysowania Prostokąta/Elipsy): Utrzymuje proporcje, rysując kwadrat lub koło.
+
+Ctrl (podczas rysowania Linii/Strzałki/Line Point): Przyciąga rysowaną linię do kątów co 15 stopni.
+
+Ctrl + LPM (na istniejącym kształcie z narzędziem Line Point): Rozpoczyna zaznaczanie typu Lasso. Kolejne kliknięcia LPM tworzą wielokąt zaznaczenia. Zakończ podwójnym kliknięciem LPM lub PPM.
+
+b. Opcje Specyficzne dla Narzędzi
+
+Obok niektórych narzędzi na liście znajdują się dodatkowe opcje:
+
+Rectangle (Prostokąt):
+
+[SpinBox]W, [SpinBox]H: Szerokość i Wysokość. Jeśli > 0, rysuje prostokąt o stałym rozmiarze po kliknięciu na pulpicie.
+
+Rnd: Checkbox. Włącza rysowanie zaokrąglonych rogów. (Skrót: U gdy narzędzie prostokąt jest aktywne)
+
+[SpinBox]R: Promień zaokrąglenia rogów.
+
+C: Przycisk czyszczący wartości W, H, R do 0.
+
+Ellipse (Elipsa):
+
+[SpinBox]W, [SpinBox]H: Szerokość i Wysokość.
+
+C: Przycisk czyszczący.
+
+Triangle (Trójkąt):
+
+[SpinBox]E: Długość boku trójkąta równobocznego.
+
+OR
+
+[SpinBox]A, [SpinBox]B: Długości przyprostokątnych trójkąta prostokątnego.
+
+C: Przycisk czyszczący.
+
+Arc (Łuk):
+
+[SpinBox]W, [SpinBox]H: Szerokość i Wysokość prostokąta opisującego łuk.
+
+[SpinBox]S: Kąt rozpiętości łuku w stopniach (domyślnie wpływa na rysowany łuk, gdy W/H są >0).
+
+C: Przycisk czyszczący.
+
+Trapeze (Trapez):
+
+[SpinBox]b1, [SpinBox]b2: Długości podstaw trapezu.
+
+[SpinBox]H: Wysokość trapezu.
+
+C: Przycisk czyszczący.
+
+Line Single (Linia):
+
+[SpinBox]L: Długość linii.
+
+C: Przycisk czyszczący.
+
+Line Point / Spline (Linia Wskazywana / Krzywa Sklejana):
+
+Invert (tylko Line Point): Odwraca zaznaczenie Lasso (zaznacza to, co na zewnątrz). (Skrót: I gdy narzędzie Line Point jest aktywne)
+
+0A/0AH: Brak strzałek. (Skrót: Alt+N)
+
+1A/1AH: Strzałka na końcu. (Skrót: Alt+E)
+
+2A/2AH: Strzałki na obu końcach. (Skrót: Alt+D)
+
+Arrow (Strzałka):
+
+[SpinBox]L: Długość linii strzałki.
+
+2x: Checkbox. Rysuje strzałkę z grotami na obu końcach. (Skrót: Alt+D gdy narzędzie Strzałka jest aktywne)
+
+C: Przycisk czyszczący.
+
+Reg. Polygon (Wielokąt Regularny):
+
+[SpinBox]N: Liczba boków.
+
+[SpinBox]R: Promień/Rozmiar.
+
+C: Przycisk czyszczący.
+
+M.Point (Punkt Pomiarowy):
+
+O / Sq: Wybór stylu znacznika (Kółko / Kwadrat). (Skróty: Alt+O / Alt+S)
+
+[SpinBox]Sz: Rozmiar znacznika.
+
+txt: Włącza/wyłącza automatyczne etykiety. (Skrót: T)
+
+T (przycisk): Konfiguracja stylu tekstu etykiet.
+
+[Dropdown]: Pozycja etykiety (Góra, Dół, Lewo, Prawo).
+
+[Pole Tekstowe]: Początkowa wartość etykiety (np. 1, A, P1).
+
+Angle (Kąt):
+
+[Przycisk Koloru]: Ustawia kolor linii kąta oraz domyślny kolor tekstu kąta.
+
+T (przycisk): Konfiguracja stylu tekstu kąta (czcionka, rozmiar itp.).
+
+IN: Pokazuje kąt wewnętrzny (wypukły). (Skrót: I)
+
+OUT: Pokazuje kąt zewnętrzny (wklęsły). (Skrót: O)
+
+Dimension (Wymiarowanie):
+
+[Przycisk Koloru]: Ustawia kolor linii podglądu wymiarowania. Finalny kolor wymiaru zależy od tego ustawienia lub koloru rysowania.
+
+[Pole Tekstowe]: Suffix (jednostka) dodawany do wartości wymiaru, np. "mm", "m".
+
+3. Omówienie Przycisków Akcji
+
+Przyciski te znajdują się w dolnej części panelu sterowania i wykonują różne operacje na scenie lub programie.
+
+Color (Board BG): Otwiera selektor kolorów do zmiany koloru tła w trybie BOARD.
+
+Color (Board Pen): Otwiera selektor kolorów do zmiany koloru pióra używanego w trybie BOARD (gdy nie jest to tryb EDIT).
+
+Color (Edit Pen): Otwiera selektor kolorów do zmiany koloru pióra używanego w trybie EDIT.
+
+Color (Temp): Otwiera selektor kolorów do zmiany koloru pióra używanego w trybie TEMP.
+
+Color (Draw): Otwiera selektor kolorów do zmiany koloru pióra używanego w trybie Normal Draw.
+
+Save (Ctrl+S): Zapisuje aktualną scenę (wszystkie narysowane kształty) do pliku .json.
+
+Load (Ctrl+L): Wczytuje scenę z pliku .json, zastępując aktualnie narysowane kształty.
+
+Load&Join (Ctrl+Shift+L): Wczytuje scenę (lub wiele scen) z pliku .json i dodaje jej zawartość do aktualnie narysowanych kształtów.
+
+LoadIMG: Pozwala wczytać obrazek jako tło. Program automatycznie przełączy się w tryb EDIT z wyłączonymi wskaźnikami.
+
+ANIM: Otwiera okno dialogowe "Konfiguracja Animacji", pozwalające wybrać pliki scen .json i ustawić parametry odtwarzania.
+Konfiguracja Animacji (Animation Configuration)
+Okno to pozwala na zdefiniowanie sposobu odtwarzania sekwencji zapisanych scen (.json). Możesz kontrolować czas, kolejność i inne aspekty animacji.
+Start Delay (s) (Opóźnienie Startu):
+Określa czas w sekundach, który upłynie od momentu kliknięcia "Start" w tym oknie do faktycznego rozpoczęcia odtwarzania pierwszej sceny animacji.
+Przydatne, aby dać sobie czas na przygotowanie lub przełączenie okien.
+Zakres: 0.0 do 300.0 sekund (z dokładnością do 3 miejsc po przecinku).
+Automatic Time (Automatyczny Czas):
+Checkbox. Decyduje o sposobie zarządzania czasem wyświetlania poszczególnych scen.
+Zaznaczone (Tryb Automatyczny):
+Wszystkie sceny będą używać wartości z pól "Interval Between Scenes" oraz "Default Scene Display Time".
+Indywidualne czasy ustawione dla scen na liście poniżej (kolumny "Time" i "T>") będą ignorowane.
+Odznaczone (Tryb Manualny):
+Możesz zdefiniować indywidualny czas wyświetlania dla każdej sceny (Time spinbox przy każdej scenie) oraz indywidualny interwał po każdej scenie (T> checkbox i powiązany spinbox).
+Sceny mogą mieć również zdefiniowany indywidualny czas startu (Start Time spinbox).
+Interval Between Scenes (s) (Interwał Między Scenami):
+Aktywne tylko w trybie Automatycznym.
+Określa czas przerwy (w sekundach) pomiędzy zakończeniem wyświetlania jednej sceny a rozpoczęciem ładowania następnej.
+Zakres: 0.0 do 60.0 sekund (z dokładnością do 4 miejsc po przecinku).
+Default Scene Display Time (s) (Domyślny Czas Wyświetlania Sceny):
+Aktywne tylko w trybie Automatycznym.
+Określa domyślny czas (w sekundach), przez który każda scena będzie wyświetlana, zanim zostanie wyczyszczona (jeśli zaznaczono "Clr?" dla niej) i załadowana zostanie następna.
+Zakres: 0.001 do 300.0 sekund (z dokładnością do 4 miejsc po przecinku).
+Load Mode (Tryb Ładowania):
+Lista rozwijana określająca, w jakim trybie rysowania (EDIT lub BOARD) będą ładowane sceny animacji.
+EDIT: Sceny będą ładowane z przezroczystym tłem, pozwalając na rysowanie na istniejącej zawartości pulpitu.
+BOARD: Sceny będą ładowane w trybie tablicy (białe tło, chyba że scena sama definiuje inne).
+Playback Type (Typ Odtwarzania):
+Grupa opcji określająca kolejność i sposób odtwarzania scen:
+Play from front (Odtwarzaj od początku): Sceny będą odtwarzane w kolejności, w jakiej pojawiają się na liście plików.
+Play from back (Odtwarzaj od końca): Sceny będą odtwarzane w odwrotnej kolejności.
+Play from front then back (Ping-Pong) (Odtwarzaj od początku, potem od końca): Sceny zostaną odtworzone od początku do końca, a następnie od końca do początku (bez powtarzania ostatniej i pierwszej sceny w punkcie zwrotnym).
+Play from back then forward (Ping-Pong) (Odtwarzaj od końca, potem od początku): Sceny zostaną odtworzone od końca do początku, a następnie od początku do końca.
+Loop (Pętla): Checkbox. Jeśli zaznaczony, cała sekwencja (zgodnie z wybranym typem odtwarzania) będzie powtarzana w nieskończoność.
+Lista Scen:
+Wyświetla listę plików .json wybranych do animacji. Dla każdej sceny można skonfigurować następujące opcje (niektóre są aktywne tylko w trybie Manualnym):
+Checkbox (pierwsza kolumna, bez nagłówka "All Incl."):
+Include Scene (Dołącz Scenę): Zaznacz, aby ta scena została uwzględniona w animacji. Odznaczenie spowoduje jej pominięcie.
+S/H (Show/Hide Preview - Pokaż/Ukryj Podgląd):
+Checkbox. Pozwala na dynamiczne załadowanie (pokazanie) lub usunięcie (ukrycie) kształtów z danej sceny na głównym pulpicie podczas konfiguracji animacji. Nie wpływa na samo odtwarzanie animacji, tylko na podgląd w tle.
+Clr? (Clear After? - Wyczyść Po?):
+Checkbox. Jeśli zaznaczony, kształty z tej sceny zostaną usunięte z pulpitu po upłynięciu jej czasu wyświetlania, a przed załadowaniem następnej sceny. Jeśli odznaczone, kształty z tej sceny pozostaną widoczne, a kształty z następnej sceny zostaną do nich dołączone.
+Nazwa Pliku: Wyświetla nazwę pliku sceny.
+Start Time (Czas Startu) [SpinBox "Seq."]:
+Aktywne tylko w trybie Manualnym.
+Określa indywidualny czas startu tej sceny od początku całej animacji (w sekundach).
+Wartość 0 (wyświetlana jako "Seq.") oznacza, że scena rozpocznie się sekwencyjnie po zakończeniu poprzedniej sceny sekwencyjnej (z uwzględnieniem interwału, jeśli zdefiniowany).
+Wartości > 0 oznaczają bezwzględny czas startu od początku animacji (plus "Start Delay"). Sceny z indywidualnym czasem startu mogą odtwarzać się równolegle z innymi scenami (zarówno sekwencyjnymi, jak i innymi indywidualnymi).
+Time (Czas) [SpinBox]:
+Aktywne tylko w trybie Manualnym.
+Określa indywidualny czas wyświetlania tej konkretnej sceny (w sekundach).
+Wartość 0 oznacza, że zostanie użyty "Default Scene Display Time" z ustawień globalnych animacji.
+T> (Enable custom interval - Włącz własny interwał) [Checkbox]:
+Aktywne tylko w trybie Manualnym.
+Jeśli zaznaczone, interwał po tej scenie będzie brany z sąsiedniego pola SpinBox.
+[SpinBox obok T>]:
+Aktywne tylko w trybie Manualnym i gdy "T>" jest zaznaczone.
+Określa indywidualny czas przerwy (interwał w sekundach) po wyświetleniu tej sceny, a przed załadowaniem następnej sceny sekwencyjnej.
+Nagłówki "All Incl.", "All S/H", "All Clr?", "All T>":
+Checkboxy w nagłówku listy pozwalają na masowe zaznaczenie/odznaczenie odpowiednich opcji dla wszystkich scen na liście.
+Przyciski:
+Start: Rozpoczyna odtwarzanie animacji z bieżącymi ustawieniami. Zapisuje również konfigurację.
+Cancel: Anuluje konfigurację i zamyka okno dialogowe.
+Ważne uwagi dotyczące trybów czasu:
+Tryb Automatyczny: Uproszczony tryb, gdzie wszystkie sceny mają ten sam czas wyświetlania i ten sam interwał między nimi. Idealny do szybkich pokazów slajdów.
+Tryb Manualny: Daje pełną kontrolę nad czasem każdej sceny, interwałem po niej oraz pozwala na definiowanie scen, które startują w określonym momencie animacji, niezależnie od innych (mogą się nakładać). To pozwala na tworzenie bardziej złożonych sekwencji.
+
+Undo (Ctrl+Z): Cofa ostatnią wykonaną akcję.
+
+Redo (Ctrl+Y): Ponawia ostatnio cofniętą akcję.
+
+Clear (Shift+C): Usuwa wszystkie narysowane kształty ze sceny. W trybie LoadIMG (po wczytaniu obrazka tła) pozostawia obraz tła.
+
+KEYS (Ctrl+K): Otwiera okno z listą skrótów klawiszowych.
+
+BOARD (Alt+\): Przełącza w tryb tablicy (białe tło, dedykowany kolor pióra).
+
+EDIT (RAlt+\ lub Ctrl+Alt+\): Przełącza w tryb edycji (przezroczyste tło do rysowania na istniejących elementach pulpitu, dedykowany kolor pióra).
+
+TEMP (Alt+Shift+\): Przełącza w tryb tymczasowego rysowania (kształty znikają po ustawionym czasie).
+
+DRAW (Ctrl+\): Włącza/wyłącza normalny tryb rysowania.
+
+4. Omówienie Trybów Rysowania
+
+Program posiada kilka głównych trybów pracy:
+
+Normal Draw (Domyślny Tryb Rysowania):
+
+Aktywowany przyciskiem DRAW lub skrótem Ctrl+\\.
+
+Używa ustawień z górnej części panelu (Transparency, Thickness, Draw Color itp.).
+
+Opcja "Dimm" może przyciemnić tło.
+
+Kształty są trwałe, dopóki nie zostaną usunięte lub wyczyszczone.
+
+BOARD Mode (Tryb Tablicy):
+
+Aktywowany przyciskiem BOARD lub skrótem Alt+\\.
+
+Symuluje białą tablicę. Domyślnie tło jest białe (można zmienić przyciskiem "Color (Board BG)").
+
+Używa dedykowanego koloru pióra ("Color (Board Pen)").
+
+Opcja "Dimm" i wskaźniki działają zgodnie z ustawieniami globalnymi.
+
+Kształty są trwałe.
+
+Wyjście z trybu (np. przez Esc x2) może zapytać o wyczyszczenie tablicy.
+
+EDIT Mode (Tryb Edycji):
+
+Aktywowany przyciskiem EDIT lub skrótem RAlt+\\ (lub Ctrl+Alt+\\).
+
+Przeznaczony do rysowania na istniejącej zawartości pulpitu. Tło jest przezroczyste.
+
+Używa dedykowanego koloru pióra ("Color (Edit Pen)").
+
+Po wczytaniu obrazka tła (LoadIMG) program automatycznie przechodzi w ten tryb.
+
+Pozostałe funkcje jak w trybie BOARD.
+
+TEMP Mode (Tryb Tymczasowy):
+
+Aktywowany przyciskiem TEMP lub skrótem Alt+Shift+\\.
+
+Narysowane kształty znikają automatycznie po czasie ustawionym w polu "Time (s)".
+
+Używa dedykowanego koloru pióra ("Color (Temp)").
+
+Przydatny do szybkich, tymczasowych adnotacji.
+
+5. Skróty Klawiszowe
+
+Pełna lista skrótów klawiszowych dostępna jest również po naciśnięciu przycisku KEYS (Ctrl+K).
+
+Globalne Skróty Klawiszowe (Działają zawsze, gdy program jest uruchomiony w tle)
+Ctrl + \ (Backslash): Włącz/Wyłącz Główny Tryb Rysowania.
+Opis: Aktywuje lub dezaktywuje możliwość rysowania na pulpicie. Główny przełącznik dla wszystkich funkcji rysowania.
+RAlt + \ (Prawy Alt + Backslash) lub Ctrl + Alt + \: Wejdź w Tryb EDIT.
+Opis: Przełącza program w tryb edycji, który pozwala rysować na przezroczystym tle bezpośrednio na elementach pulpitu.
+Alt + \ (Backslash): Wejdź w Tryb BOARD.
+Opis: Przełącza program w tryb tablicy, domyślnie z białym tłem, idealny do notatek i prezentacji.
+Alt + Shift + \ (Backslash): Wejdź w Tryb TEMP.
+Opis: Przełącza program w tryb tymczasowego rysowania, gdzie kształty znikają automatycznie po ustalonym czasie.
+Shift + PrintScreen: Zapisz Zrzut Ekranu.
+Opis: Wykonuje zrzut całego ekranu i otwiera okno dialogowe zapisu pliku (JPG lub PNG).
+Alt+Shift+Home: Pokaż/Ukryj Linie Pomocnicze.
+Ctrl+Alt+F10: Pokaż/Ukryj Siatkę.
+Alt+Shift+F1: Włącz tryb przyciągania do Linii Pomocniczych (S2L).
+Alt+Shift+F2: Włącz tryb przyciągania do Siatki (S2G).
+Alt+Shift+F3: Włącz tryb przyciągania do Wszystkiego (S2A - Linie, Siatka, Kształty).
+Alt+Shift+F4: Wyłącz przyciąganie (OFF).
+
+Ogólne Skróty (Gdy Panel Sterowania lub Okno Rysowania jest Aktywne)
+Ctrl + Home: Pokaż/Ukryj Panel Sterowania.
+Opis: Przełącza widoczność głównego okna panelu sterowania.
+Ctrl + K: Pokaż/Ukryj Okno Skrótów Klawiszowych.
+Opis: Wyświetla lub ukrywa to okno z listą skrótów.
+Skróty Aktywne w Trybie Rysowania (Gdy Ctrl + \ jest włączone)
+Nawigacja i Zarządzanie Trybem
+Esc:
+Opis: Wielofunkcyjny klawisz:
+Odznacza wszystkie zaznaczone kształty.
+Anuluje bieżące rysowanie kształtu (np. linii, wielokąta).
+Anuluje akcję przeciągania lub zmiany rozmiaru.
+Ukrywa wyświetlanie kąta orientacji (po użyciu Alt+J).
+Wychodzi z normalnego trybu rysowania (jeśli żadna inna akcja nie jest aktywna).
+W trybie TEMP: Wychodzi z trybu TEMP.
+W trybie BOARD/EDIT: Pierwsze naciśnięcie wyświetla podpowiedź, drugie szybkie naciśnięcie wychodzi z trybu (może zapytać o wyczyszczenie).
+W trybie LoadIMG (po wczytaniu obrazka tła, gdy aktywny jest tryb EDIT): Otwiera dialog z opcjami (Wyczyść obraz i kształty, Zapisz widok jako JPG, Anuluj).
+Esc (podczas Animacji): Zatrzymaj odtwarzanie animacji.
+Spacja (podczas Animacji): Pauza/Wznów odtwarzanie animacji.
+Zarządzanie Widocznością
+H: Pokaż/Ukryj Wszystkie Kształty.
+Opis: Globalnie przełącza widoczność wszystkich narysowanych elementów.
+Shift + H: Pokaż/Ukryj Etykiety MPoint.
+Opis: Przełącza widoczność tylko tekstowych etykiet dla punktów MPoint.
+Ctrl + H: Pokaż/Ukryj Znaczniki MPoint.
+Opis: Przełącza widoczność tylko graficznych znaczników (kółek/kwadratów) MPoint.
+Alt + H: Pokaż/Ukryj Grupy MPoint (Etykiety i Znaczniki).
+Opis: Przełącza widoczność zarówno znaczników, jak i etykiet MPoint jednocześnie.
+C: Pokaż/Ukryj Punkty Środkowe Kształtów.
+Opis: Włącza/wyłącza wyświetlanie małego punktu na środku narysowanych linii, prostokątów itp.
+V: Pokaż/Ukryj Punkty Podziału Kształtów.
+Opis: Włącza/wyłącza wyświetlanie punktów dzielących segmenty kształtów na równe części (zgodnie z ustawieniami w "Division Settings").
+Wybór Narzędzi
+R: Prostokąt (Rectangle)
+E: Elipsa (Ellipse)
+T: Trójkąt (Triangle)
+U: Łuk (Arc)
+Z: Trapez (Trapeze)
+L: Linia Pojedyncza (Line Single)
+M: Linia Wskazywana (Line Point)
+A: Strzałka (Arrow)
+P: Wielokąt (Polygon)
+S: Krzywa Sklejana (Spline)
+W: Wielokąt Regularny (Regular Polygon)
+O: Punkt Pomiarowy (M.Point)
+> (Większy niż): Kąt (Angle)
+B: Pędzel (Brush)
+X: Tekst (Text)
+Q: Wymiarowanie (Dimension)
+Modyfikatory Narzędzi (Gdy odpowiednie narzędzie jest aktywne)
+Line Point:
+Ctrl + LPM (podczas rysowania): Przyciąga rysowany segment linii do kątów co 15 stopni.
+Alt + N: Ustawia brak strzałek dla kolejnych linii.
+Alt + E: Ustawia strzałkę na końcu dla kolejnych linii.
+Alt + D: Ustawia strzałki na obu końcach dla kolejnych linii.
+I: Odwraca zaznaczenie Lasso (gdy Ctrl jest wciśnięty i rysowany jest wielokąt Lasso).
+Spline:
+Alt + N: Ustawia brak strzałek dla kolejnych krzywych.
+Alt + E: Ustawia strzałkę na końcu dla kolejnych krzywych.
+Alt + D: Ustawia strzałki na obu końcach dla kolejnych krzywych.
+Arrow:
+Alt + D: Przełącza rysowanie strzałki z podwójnym grotem.
+M.Point:
+Alt + O: Przełącza na rysowanie okrągłych znaczników.
+Alt + S: Przełącza na rysowanie kwadratowych znaczników.
+T: Przełącza widoczność etykiet dla kolejnych punktów MPoint.
+Angle Tool:
+I: Przełącza wyświetlanie kąta wewnętrznego.
+O: Przełącza wyświetlanie kąta zewnętrznego.
+Rectangle Tool:
+U: Przełącza rysowanie zaokrąglonych rogów dla następnego rysowanego/umieszczanego prostokąta.
+Operacje na Plikach i Scenie
+Ctrl + S: Zapisz Scenę (do pliku .json).
+Ctrl + L: Wczytaj Scenę (zastępuje aktualną).
+Ctrl + Shift + L: Wczytaj i Dołącz Scenę/Sceny (dodaje do aktualnej).
+ANIM Button: Setup/Run Scene Animation (Konfiguracja/Uruchomienie Animacji Sceny).
+LoadIMG Button: Load Background Image (Enters EDIT) (Wczytaj Obraz Tła - przechodzi w tryb EDIT).
+Shift + C: Wyczyść Wszystkie Kształty (w trybie LoadIMG zachowuje tło).
+EDIT Button / RAlt+\\: Enter Edit Mode (Transparent BG) (Wejdź w Tryb Edycji - przezroczyste tło).
+BOARD Button / Alt+\\: Enter Whiteboard Mode (Wejdź w Tryb Tablicy).
+TEMP Button / Alt+Shift+\\: Enter Temporary Drawing Mode (Wejdź w Tryb Tymczasowego Rysowania).
+Shift+PrtSc: Save Screenshot (JPG/PNG) (Global Hotkey) (Zapisz Zrzut Ekranu - globalny skrót).
+Edycja i Cofanie
+Ctrl + Z: Cofnij ostatnią akcję.
+Ctrl + Y lub Ctrl + Shift + Z: Ponów ostatnio cofniętą akcję.
+Ctrl + C: Kopiuj zaznaczone kształty (w tym całe grupy, jeśli część grupy jest zaznaczona).
+Ctrl + V: Wklej skopiowane kształty w pozycji kursora.
+Ctrl + G: Grupuj zaznaczone kształty.
+Ctrl + Shift + G: Rozgrupuj zaznaczone kształty (dotyczy tylko grup utworzonych przez użytkownika).
+Delete lub Backspace: Usuń zaznaczone kształty (w tym całe grupy lub pojedyncze części wymiarów/kątów, jeśli są zaznaczone).
+Numpad . (Kropka) lub Numpad Del lub Numpad *: Otwórz okno dialogowe wyboru koloru dla zaznaczonych kształtów.
+Ctrl + Podwójne Kliknięcie LPM (na kształcie nie-tekstowym i nie-grupowanym): Usuń kształt.
+Podwójne Kliknięcie LPM (na kształcie tekstowym): Edytuj tekst i jego właściwości.
+Y: Wyślij zaznaczone kształty na spód (będą rysowane jako pierwsze).
+Zaznaczanie i Manipulacja Kształtami
+LPM Klik (na pustym obszarze): Rozpocznij rysowanie nowego kształtu, umieść kształt o stałym rozmiarze, umieść MPoint, dodaj punkt wielokąta/linii/wymiaru/kąta. Jeśli są zaznaczone kształty, kliknięcie na pustym odznacza je.
+LPM Klik (na kształcie): Zaznacz kształt. Jeśli kształt jest częścią grupy, zaznaczona zostanie cała grupa (oprócz specjalnych grup jak wymiary czy kąty, gdzie zaznaczana jest konkretna część).
+Ctrl + LPM Klik (na kształcie): Dodaj/Usuń kształt (lub jego grupę/część) z zaznaczenia.
+LPM Klik i Przeciągnij (na zaznaczonym kształcie): Przesuń zaznaczone kształty.
+LPM Klik i Przeciągnij (na uchwycie zmiany rozmiaru zaznaczonego kształtu): Zmień rozmiar kształtu.
+Ctrl + A: Zaznacz Wszystkie Widoczne Kształty.
+Line Point Tool + Ctrl + LPM Przeciągnij: Rysuj wielokąt zaznaczenia Lasso. Zakończ podwójnym kliknięciem LPM lub PPM.
+PPM Klik: Wyczyść zaznaczenie, zakończ rysowanie wielokąta/linii wskazywanej, anuluj Lasso, anuluj wymiarowanie/rysowanie kąta.
+Strzałki Klawiatury: Przesuń zaznaczone kształty o 1 piksel.
+Shift + Strzałki Klawiatury: Przesuń zaznaczone kształty o 10 pikseli.
++ lub =: Powiększ zaznaczone kształty.
+Shift + + lub Shift + =: Powiększ zaznaczone kształty (większy krok).
+- (Minus): Pomniejsz zaznaczone kształty.
+Shift + - (Minus): Pomniejsz zaznaczone kształty (większy krok).
+Alt + Strzałki Lewo/Prawo: Obróć zaznaczone kształty o 0.1° (bez Shift) lub 1° (z Shift). Wyświetla kąty orientacji.
+Ctrl + Strzałki Lewo/Prawo: Obróć zaznaczone kształty o 90°.
+Ctrl + Przeciąganie (podczas rysowania Linii/Strzałki/Line Point): Ogranicza kąt rysowanej linii do przyrostów co 15°.
+Shift + Przeciąganie (podczas rysowania Prostokąta/Elipsy): Utrzymuje proporcje (rysuje kwadrat/koło).
+Shift + Przeciąganie (podczas zmiany rozmiaru Prostokąta/Elipsy): Utrzymuje proporcje.
+Alt + J: Pokaż/Ukryj kąt odchylenia od osi dla zaznaczonych linii/strzałek.
+W/H/Param Inputs: Ustaw stały rozmiar (Kliknij na płótnie, aby umieścić).
+Clear ('C') Button: Zresetuj parametry stałego rozmiaru dla sąsiedniego narzędzia do 0.
+MPoint Controls
+Radio (O): Select Circle Marker Style (Alt+O to toggle)
+Checkbox (Sq): Select Square Marker Style (Alt+S to toggle)
+Size Spinbox (Sz): Set Marker Size
+Checkbox (txt): Enable/Disable Labels (T=Toggle)
+Button (T): Configure MPoint Label Text Style
+Dropdown (Up/Down...): Set Label Position
+Text Field ('1'): Set Starting Label
+Angle Tool Controls
+Button (Color): Set Line & Default Text Color
+Button (T): Configure Angle Text Style
+Checkbox (IN): Show Inner Angle (I=Toggle)
+Checkbox (OUT): Show Outer Angle (O=Toggle)
+Hatch Fill Shortcuts
+/ (Ukośnik): Przełącz kreskowanie ukośne do przodu.
+\ (Backslash): Przełącz kreskowanie ukośne do tyłu.
+| (Pionowa kreska, często Shift + \): Przełącz kreskowanie pionowe.
+_ (Podkreślenie, często Shift + -): Przełącz kreskowanie poziome.
+Szybka Zmiana Parametrów Rysowania
+Shift + PageUp/Down: Dostosuj Przezroczystość (%).
+Ctrl + PageUp/Down: Dostosuj Rozmiar Grota Strzałki.
+Alt + PageUp/Down: Dostosuj Rozmiar Pędzla.
+Ctrl + Shift + PageUp/Down: Zmień Styl Linii (przechodzi przez listę).
+Numpad + / - (gdy nic nie jest zaznaczone): Zmień Grubość Linii o +/- 1px.
+Skróty Kolorów (Tryb Normal Draw / TEMP)
+0-9 (klawiatura numeryczna lub główna): Zastosuj predefiniowany kolor. Jeśli coś jest zaznaczone, zmieni kolor zaznaczenia. Jeśli nic nie jest zaznaczone, zmieni aktualny kolor pióra. Kolory odpowiadają:
+0: Czarny
+1: Biały
+2: Cyjan
+3: Szary
+4: Czerwony
+5: Pomarańczowy
+6: Żółty
+7: Zielony
+8: Niebieski
+9: Magenta
+(See tooltips/docs for color mapping)
+Tylko w Trybie BOARD / EDIT
+0-9 (klawiatura numeryczna lub główna): Zastosuj predefiniowany kolor. Jeśli coś jest zaznaczone, zmieni kolor zaznaczenia. Jeśli nic nie jest zaznaczone, zmieni aktualny kolor pióra (Edit Pen lub Board Pen, zależnie od aktywnego trybu).
+Alt + 0-9: Zmień kolor tła w trybie BOARD (tylko składowe RGB, zachowuje przezroczystość).
+Ctrl + 0-9: Zmień przezroczystość tła w trybie BOARD (0 = minimalna alfa, 9 = pełna nieprzezroczystość).
+(See tooltips/docs for color mapping)
+Właściwości Zaznaczonych Kształtów (z Klawiatury Numerycznej)
+Numpad /: Przełącz wypełnienie dla zaznaczonych kształtów, które mogą być wypełnione.
+Numpad . (Kropka) lub Numpad Del lub Numpad *: Otwórz okno dialogowe wyboru koloru dla zaznaczonych kształtów.
+RAlt + Numpad 0-9: Ustaw poziom przezroczystości (Alfa) dla zaznaczonych kształtów (0 = 0% krycia, 9 = 100% krycia).
+Guide Lines Module Specific (Specyficzne dla Modułu Linii Pomocniczych)
+Alt+Shift+PageUp: Zmień Pozycję Linijek (cyklicznie: góra-lewo, góra-prawo, dół-prawo, dół-lewo).
+Ctrl+Alt+F9: Wyczyść Wszystkie Prowadnice.
+Ctrl+Alt+PageUp: Zwiększ Grubość Prowadnic.
+Ctrl+Alt+PageDown: Zmniejsz Grubość Prowadnic.
+Grid Module Specific (Specyficzne dla Modułu Siatki)
+Ctrl+Alt+F10: Pokaż/Ukryj Siatkę (także główny skrót globalny).
+Ctrl+Alt+Up: Zwiększ Liczbę Kolumn (w trybie podziału na sekcje).
+Ctrl+Alt+Down: Zmniejsz Liczbę Kolumn (w trybie podziału na sekcje).
+Ctrl+Alt+Right: Zwiększ Liczbę Wierszy (w trybie podziału na sekcje).
+Ctrl+Alt+Left: Zmniejsz Liczbę Wierszy (w trybie podziału na sekcje).
+Ctrl+Alt+. (kropka): Zmniejsz Przesunięcie X Siatki.
+Ctrl+Alt+, (przecinek): Zwiększ Przesunięcie X Siatki.
+Ctrl+Alt+[ (nawias kwadratowy otwierający): Zmniejsz Przesunięcie Y Siatki.
+Ctrl+Alt+] (nawias kwadratowy zamykający): Zwiększ Przesunięcie Y Siatki.
+Ctrl+Alt+F11: Zresetuj Przesunięcie Siatki do (0,0).
+Ctrl+Alt+F12: Pokaż/Ukryj Kropki na Siatce.
+
+Pamiętaj, że niektóre skróty mogą działać tylko wtedy, gdy odpowiednie narzędzie jest aktywne lub gdy program jest w określonym trybie.

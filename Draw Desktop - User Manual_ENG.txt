@@ -1,0 +1,657 @@
+Draw Desktop - User Manual
+
+Welcome to Draw Desktop! This program allows you to draw directly on your desktop or in dedicated whiteboard modes. The following manual will help you understand all its features.
+
+1. Overview of Main Panel Options
+
+This section describes the options available in the upper part of the control panel, which affect global drawing settings or tools.
+
+Transparency:
+
+Sets the overall transparency (opacity) of drawn shapes.
+
+Range: 0% (completely transparent) to 100% (completely opaque).
+
+Shortcut: Shift + PageUp/Down.
+
+Thickness:
+
+Determines the line thickness for shape outlines and for tools like Line, Arrow, Polygon, etc. (in pixels).
+
+Range: 1 to 50 pixels.
+
+Shortcut (no selection): Numpad +/-.
+
+Arrow Head:
+
+Sets the size of the arrowhead for the Arrow tool and for arrow styles in "Line Point" and "Spline" tools.
+
+Range: 1 to 100 pixels.
+
+Shortcut: Ctrl + PageUp/Down.
+
+Brush Size:
+
+Determines the stroke thickness for the Brush tool.
+
+Range: 1 to 100 pixels.
+
+Shortcut: Alt + PageUp/Down.
+
+Time (s):
+
+Applies only to TEMP mode. Determines how long (in seconds) a drawn shape will remain visible before disappearing.
+
+Range: 0.1 to 60.0 seconds (with 3 decimal places accuracy).
+
+Style (Line Style):
+
+Dropdown list allowing selection of line style for drawn shapes (e.g., Solid, Dash, Dot, Dash Dot, and various Custom Dash variants).
+
+Shortcut: Ctrl+Shift + PageUp/Down.
+
+Fill Shapes:
+
+Checkbox. If checked, closed shapes (like Rectangle, Ellipse, Triangle, Polygon, Trapeze, Regular Polygon, Arc, MPoint) will be filled with a solid color (or gradient if defined).
+
+Shortcut (for selected shapes): Numpad /.
+
+ZOOM Button:
+
+Toggles the Windows Magnifier system tool.
+
+On first use, a message about configuring the Magnifier may appear.
+
+The PyAutoGUI module is required for automatic closing of the Magnifier. If missing, the Magnifier will not be closed automatically by the button or when exiting the program.
+
+Hatch Fill + Options:
+
+Group of controls allowing the addition of hatch filling to shapes (instead of or in addition to solid fill).
+
+Checkboxes:
+
+/: Forward slash hatch (Shortcut: /).
+
+\: Backward slash hatch (Shortcut: \).
+
+—: Horizontal hatch (Shortcut: _ i.e., Shift + -).
+
+|: Vertical hatch (Shortcut: | i.e., Shift + \).
+
+T: [SpinBox]px: Hatch line thickness.
+
+[Color Button]: Hatch line color.
+
+Division Settings + Options:
+
+Group of controls for visualizing the division of shape segments into equal parts.
+
+Divide (V): Checkbox toggling the display of division points (Shortcut: V).
+
+[SpinBox]: Number of parts the segment should be divided into (minimum 2).
+
+[Color Button]: Color of the division points.
+
+Size: [SpinBox]px: Diameter of the division points.
+
+Lines + Set.L:
+
+Lines (Checkbox): Toggles the visibility of guide lines (horizontal and vertical rulers and guides). Shortcut: Alt+Shift+Home.
+
+Set.L (Button): Opens the "Guide Lines Settings" dialog, where you can configure the thickness, color, and transparency of guides, as well as change the position of rulers on the screen or clear all guides.
+
+Grid + Set.G:
+
+Grid (Checkbox): Toggles the visibility of the grid on the desktop. Shortcut: Ctrl+Alt+F10.
+
+Set.G (Button): Opens the "Grid Settings" window, allowing detailed configuration of the grid, including:
+Grid mode: division by number of sections or by cell size.
+Number of rows and columns (for sections mode).
+Cell size (width and height in pixels, for cell size mode).
+Color, transparency, and thickness of horizontal and vertical lines (separately for both modes).
+Offset (X, Y) of the entire grid.
+Display of dots in the centers of sections/cells, their size, and color.
+
+Snapping Mode + Options:
+
+Group of radio buttons determining what drawn points or the cursor will snap to when creating shapes:
+
+S2L (Snap to Lines): Snapping to active Guide Lines. (Shortcut: Alt+Shift+F1)
+S2G (Snap to Grid): Snapping to Grid lines or intersections. (Shortcut: Alt+Shift+F2)
+S2A (Snap to All): Snapping to key points (vertices, midpoints, division points) of existing shapes, as well as to Guide Lines and Grid if active. (Shortcut: Alt+Shift+F3)
+OFF: Disables snapping. (Shortcut: Alt+Shift+F4)
+Sens: [SpinBox]px: Snapping sensitivity in pixels. Determines how close the cursor must be to an element for snapping to occur.
+
+Dimm:
+
+Checkbox. If checked, the desktop background will be slightly dimmed when drawing in Normal Draw mode (does not apply to BOARD, EDIT, TEMP modes). This helps to see drawn elements better.
+
+Clear W. (Clear Warning):
+
+Checkbox. If checked, the program will ask for confirmation before clearing the whiteboard content when exiting BOARD or EDIT mode.
+
+HIDE/SHOW Button:
+
+Toggles the visibility of all drawn shapes.
+
+Shortcut: H.
+
+Show Indicators:
+
+Checkbox. If checked, information about the active mode, tool, color, line thickness, style, and transparency will be displayed in the corners of the screen.
+
+Center:
+
+Checkbox. If checked, a small dot indicating their geometric or visual center will be displayed in the middle of drawn shapes (e.g., lines, rectangles).
+
+Shortcut: C.
+
+? Button (Information):
+
+Displays a window with information about the program's author.
+
+2. Overview of Drawing "Tools"
+
+The "Tools" section contains a list of available drawing tools. Select a tool by clicking on its name.
+
+Rectangle (R): Draws rectangles.
+
+Ellipse (E): Draws ellipses and circles.
+
+Triangle (T): Draws triangles.
+
+Arc (U): Draws elliptical arcs.
+
+Trapeze (Z): Draws trapezoids.
+
+Line Single (L): Draws single line segments.
+
+Line Point (M): Draws polylines, point by point. Finish drawing by clicking RMB, Esc, or double-clicking LMB near the starting point.
+
+Arrow (A): Draws arrows.
+
+Polygon (P): Draws polygons, point by point. Finish drawing by clicking RMB, Esc, or double-clicking LMB near the starting point.
+
+Spline (S): Draws spline curves (Bézier). LMB adds control points. RMB or double LMB finishes the curve. Esc cancels.
+
+Reg. Polygon (W) (Regular Polygon): Draws regular polygons.
+
+M.Point (O) (Measurement Point): Places markers (circles/squares) with optional labels.
+
+Angle (>): Tool for drawing and displaying angle values. Requires 3 clicks: point A, vertex O, point B.
+
+Brush (B): Draws freehand lines with the thickness defined in "Brush Size".
+
+Text (X): Allows adding text. Click or drag to define the area, then a dialog box will appear to enter text and set its properties.
+
+Dimension (Q): Tool for creating dimension lines.
+
+Click LMB to set the first dimension point.
+
+Click LMB to set the second dimension point.
+
+Click LMB to set the offset of the dimension line and text.
+
+Esc or RMB cancels the current dimensioning.
+
+a. Drawing with Modifier Keys
+
+Shift (while drawing Rectangle/Ellipse): Maintains proportions, drawing a square or circle.
+
+Ctrl (while drawing Line/Arrow/Line Point): Snaps the drawn line to angles every 15 degrees.
+
+Ctrl + LMB (on an existing shape with Line Point tool active): Starts Lasso selection. Subsequent LMB clicks create the selection polygon. Finish with double LMB or RMB.
+
+b. Tool-Specific Options
+
+Next to some tools in the list, there are additional options:
+
+Rectangle:
+
+[SpinBox]W, [SpinBox]H: Width and Height. If > 0, draws a rectangle of fixed size when clicked on the desktop.
+
+Rnd: Checkbox. Enables drawing rounded corners. (Shortcut: U when Rectangle tool is active)
+
+[SpinBox]R: Corner radius.
+
+C: Button to clear W, H, R values to 0.
+
+Ellipse:
+
+[SpinBox]W, [SpinBox]H: Width and Height.
+
+C: Clear button.
+
+Triangle:
+
+[SpinBox]E: Side length of an equilateral triangle.
+
+OR
+
+[SpinBox]A, [SpinBox]B: Lengths of the legs of a right-angled triangle.
+
+C: Clear button.
+
+Arc:
+
+[SpinBox]W, [SpinBox]H: Width and Height of the arc's bounding rectangle.
+
+[SpinBox]S: Arc span angle in degrees (by default, affects drawn arc when W/H are >0).
+
+C: Clear button.
+
+Trapeze:
+
+[SpinBox]b1, [SpinBox]b2: Lengths of the trapezoid bases.
+
+[SpinBox]H: Height of the trapezoid.
+
+C: Clear button.
+
+Line Single:
+
+[SpinBox]L: Line length.
+
+C: Clear button.
+
+Line Point / Spline:
+
+Invert (Line Point only): Inverts Lasso selection (selects what's outside). (Shortcut: I when Line Point tool is active)
+
+0A/0AH: No arrows. (Shortcut: Alt+N)
+
+1A/1AH: Arrow at the end. (Shortcut: Alt+E)
+
+2A/2AH: Arrows at both ends. (Shortcut: Alt+D)
+
+Arrow:
+
+[SpinBox]L: Length of the arrow line.
+
+2x: Checkbox. Draws an arrow with heads at both ends. (Shortcut: Alt+D when Arrow tool is active)
+
+C: Clear button.
+
+Reg. Polygon (Regular Polygon):
+
+[SpinBox]N: Number of sides.
+
+[SpinBox]R: Radius/Size.
+
+C: Clear button.
+
+M.Point (Measurement Point):
+
+O / Sq: Select marker style (Circle / Square). (Shortcuts: Alt+O / Alt+S)
+
+[SpinBox]Sz: Marker size.
+
+txt: Enables/disables automatic labels. (Shortcut: T)
+
+T (button): Configure label text style.
+
+[Dropdown]: Label position (Up, Down, Left, Right).
+
+[Text Field]: Initial label value (e.g., 1, A, P1).
+
+Angle:
+
+[Color Button]: Sets the angle line color and default angle text color.
+
+T (button): Configure angle text style (font, size, etc.).
+
+IN: Show inner (convex) angle. (Shortcut: I)
+
+OUT: Show outer (reflex) angle. (Shortcut: O)
+
+Dimension:
+
+[Color Button]: Sets the dimension preview line color. The final dimension color depends on this setting or the drawing color.
+
+[Text Field]: Suffix (unit) added to the dimension value, e.g., "mm", "m".
+
+3. Overview of Action Buttons
+
+These buttons are located in the lower part of the control panel and perform various operations on the scene or program.
+
+Color (Board BG): Opens a color picker to change the background color in BOARD mode.
+
+Color (Board Pen): Opens a color picker to change the pen color used in BOARD mode (when not in EDIT mode).
+
+Color (Edit Pen): Opens a color picker to change the pen color used in EDIT mode.
+
+Color (Temp): Opens a color picker to change the pen color used in TEMP mode.
+
+Color (Draw): Opens a color picker to change the pen color used in Normal Draw mode.
+
+Save (Ctrl+S): Saves the current scene (all drawn shapes) to a .json or .svg file.
+
+Load (Ctrl+L): Loads a scene from a .json file, replacing currently drawn shapes.
+
+Load&Join (Ctrl+Shift+L): Loads a scene (or multiple scenes) from a .json file and adds its content to the currently drawn shapes.
+
+LoadIMG: Allows loading an image as a background. The program will automatically switch to EDIT mode with indicators off.
+
+ANIM: Opens the "Animation Configuration" dialog, allowing selection of .json scene files and setting playback parameters.
+Animation Configuration
+This window allows you to define how a sequence of saved scenes (.json) will be played back. You can control the timing, order, and other aspects of the animation.
+Start Delay (s):
+Specifies the time in seconds that will elapse from clicking "Start" in this window to the actual start of playback for the first animation scene.
+Useful to give yourself time to prepare or switch windows.
+Range: 0.0 to 300.0 seconds (with 3 decimal places accuracy).
+Automatic Time:
+Checkbox. Determines how the display time for individual scenes is managed.
+Checked (Automatic Mode):
+All scenes will use the values from the "Interval Between Scenes" and "Default Scene Display Time" fields.
+Individual times set for scenes in the list below (columns "Time" and "T>") will be ignored.
+Unchecked (Manual Mode):
+You can define an individual display time for each scene (Time spinbox next to each scene) and an individual interval after each scene (T> checkbox and associated spinbox).
+Scenes can also have an individual start time defined (Start Time spinbox).
+Interval Between Scenes (s):
+Active only in Automatic Mode.
+Specifies the pause time (in seconds) between the end of one scene's display and the start of loading the next.
+Range: 0.0 to 60.0 seconds (with 4 decimal places accuracy).
+Default Scene Display Time (s):
+Active only in Automatic Mode.
+Specifies the default time (in seconds) for which each scene will be displayed before being cleared (if "Clr?" is checked for it) and the next one is loaded.
+Range: 0.001 to 300.0 seconds (with 4 decimal places accuracy).
+Load Mode:
+Dropdown list specifying in which drawing mode (EDIT or BOARD) the animation scenes will be loaded.
+EDIT: Scenes will be loaded with a transparent background, allowing drawing on existing desktop content.
+BOARD: Scenes will be loaded in whiteboard mode (white background, unless the scene itself defines another).
+Playback Type:
+Group of options specifying the order and manner of scene playback:
+Play from front: Scenes will be played in the order they appear in the file list.
+Play from back: Scenes will be played in reverse order.
+Play from front then back (Ping-Pong): Scenes will be played from start to end, then from end to start (without repeating the last and first scenes at the turning point).
+Play from back then forward (Ping-Pong): Scenes will be played from end to start, then from start to end.
+Loop: Checkbox. If checked, the entire sequence (according to the selected playback type) will be repeated indefinitely.
+Scene List:
+Displays the list of .json files selected for animation. For each scene, the following options can be configured (some are active only in Manual Mode):
+Checkbox (first column, without "All Incl." header):
+Include Scene: Check to include this scene in the animation. Unchecking will skip it.
+S/H (Show/Hide Preview):
+Checkbox. Allows dynamically loading (showing) or removing (hiding) shapes from a given scene on the main desktop during animation configuration. Does not affect the animation playback itself, only the background preview.
+Clr? (Clear After?):
+Checkbox. If checked, shapes from this scene will be removed from the desktop after its display time has elapsed and before the next scene is loaded. If unchecked, shapes from this scene will remain visible, and shapes from the next scene will be added to them.
+Filename: Displays the scene's filename.
+Start Time [SpinBox "Seq."]:
+Active only in Manual Mode.
+Specifies the individual start time for this scene from the beginning of the entire animation (in seconds).
+A value of 0 (displayed as "Seq.") means the scene will start sequentially after the previous sequential scene finishes (considering the interval, if defined).
+Values > 0 mean an absolute start time from the beginning of the animation (plus "Start Delay"). Scenes with individual start times can play concurrently with other scenes (both sequential and other individual ones).
+Time [SpinBox]:
+Active only in Manual Mode.
+Specifies the individual display time for this particular scene (in seconds).
+A value of 0 means the "Default Scene Display Time" from global animation settings will be used.
+T> (Enable custom interval) [Checkbox]:
+Active only in Manual Mode.
+If checked, the interval after this scene will be taken from the adjacent SpinBox.
+[SpinBox next to T>]:
+Active only in Manual Mode and when "T>" is checked.
+Specifies the individual pause time (interval in seconds) after this scene is displayed and before the next sequential scene is loaded.
+Headers "All Incl.", "All S/H", "All Clr?", "All T>":
+Checkboxes in the list header allow for batch checking/unchecking of the respective options for all scenes in the list.
+Buttons:
+Start: Begins animation playback with the current settings. Also saves the configuration.
+Cancel: Cancels configuration and closes the dialog window.
+Important notes regarding time modes:
+Automatic Mode: Simplified mode where all scenes have the same display time and the same interval between them. Ideal for quick slideshows.
+Manual Mode: Gives full control over each scene's time, the interval after it, and allows defining scenes that start at a specific moment in the animation, independently of others (they can overlap). This allows for creating more complex sequences.
+
+Undo (Ctrl+Z): Undoes the last performed action.
+
+Redo (Ctrl+Y): Redoes the last undone action.
+
+Clear (Shift+C): Removes all drawn shapes from the scene. In LoadIMG mode (after loading a background image), it keeps the background image.
+
+KEYS (Ctrl+K): Opens a window with a list of keyboard shortcuts.
+
+BOARD (Alt+\): Switches to whiteboard mode (white background, dedicated pen color).
+
+EDIT (RAlt+\ or Ctrl+Alt+\): Switches to edit mode (transparent background for drawing on existing desktop elements, dedicated pen color).
+
+TEMP (Alt+Shift+\): Switches to temporary drawing mode (shapes disappear after a set time).
+
+DRAW (Ctrl+\): Toggles normal drawing mode.
+
+4. Overview of Drawing Modes
+
+The program has several main operating modes:
+
+Normal Draw (Default Drawing Mode):
+
+Activated by the DRAW button or Ctrl+\ shortcut.
+
+Uses settings from the upper part of the panel (Transparency, Thickness, Draw Color, etc.).
+
+The "Dimm" option can dim the background.
+
+Shapes are permanent until deleted or cleared.
+
+BOARD Mode:
+
+Activated by the BOARD button or Alt+\ shortcut.
+
+Simulates a whiteboard. By default, the background is white (can be changed with the "Color (Board BG)" button).
+
+Uses a dedicated pen color ("Color (Board Pen)").
+
+"Dimm" option and indicators work according to global settings.
+
+Shapes are permanent.
+
+Exiting the mode (e.g., via Esc x2) may ask to clear the board.
+
+EDIT Mode:
+
+Activated by the EDIT button or RAlt+\ (or Ctrl+Alt+\) shortcut.
+
+Intended for drawing on existing desktop content. The background is transparent.
+
+Uses a dedicated pen color ("Color (Edit Pen)").
+
+After loading a background image (LoadIMG), the program automatically switches to this mode.
+
+Other functions are as in BOARD mode.
+
+TEMP Mode (Temporary Mode):
+
+Activated by the TEMP button or Alt+Shift+\ shortcut.
+
+Drawn shapes disappear automatically after the time set in the "Time (s)" field.
+
+Uses a dedicated pen color ("Color (Temp)").
+
+Useful for quick, temporary annotations.
+
+5. Keyboard Shortcuts
+
+A full list of keyboard shortcuts is also available by pressing the KEYS button (Ctrl+K).
+
+Global Keyboard Shortcuts (Work always, when the program is running in the background)
+Ctrl + \ (Backslash): Toggle Main Drawing Mode.
+Description: Activates or deactivates the ability to draw on the desktop. Main switch for all drawing functions.
+RAlt + \ (Right Alt + Backslash) or Ctrl + Alt + \: Enter EDIT Mode.
+Description: Switches the program to edit mode, which allows drawing on a transparent background directly on desktop elements.
+Alt + \ (Backslash): Enter BOARD Mode.
+Description: Switches the program to whiteboard mode, by default with a white background, ideal for notes and presentations.
+Alt + Shift + \ (Backslash): Enter TEMP Mode.
+Description: Switches the program to temporary drawing mode, where shapes disappear automatically after a set time.
+Shift + PrintScreen: Save Screenshot.
+Description: Takes a screenshot of the entire screen and opens a file save dialog (JPG or PNG).
+Alt+Shift+Home: Show/Hide Guide Lines.
+Ctrl+Alt+F10: Show/Hide Grid.
+Alt+Shift+F1: Toggle Snap to Lines Mode (S2L).
+Alt+Shift+F2: Toggle Snap to Grid Mode (S2G).
+Alt+Shift+F3: Toggle Snap to All Shapes Mode (S2A - Lines, Grid, Shapes).
+Alt+Shift+F4: Turn Snap OFF.
+
+General Shortcuts (When Control Panel or Drawing Window is Active)
+Ctrl + Home: Show/Hide Control Panel.
+Description: Toggles the visibility of the main control panel window.
+Ctrl + K: Show/Hide Keyboard Shortcuts Window.
+Description: Displays or hides this window with the list of shortcuts.
+Shortcuts Active in Drawing Mode (When Ctrl + \ is enabled)
+Navigation and Mode Management
+Esc:
+Description: Multifunctional key:
+Deselects all selected shapes.
+Cancels current shape drawing (e.g., line, polygon).
+Cancels drag or resize action.
+Hides the orientation angle display (after using Alt+J).
+Exits normal drawing mode (if no other action is active).
+In TEMP mode: Exits TEMP mode.
+In BOARD/EDIT mode: First press displays a hint, second quick press exits the mode (may ask to clear).
+In LoadIMG mode (after loading a background image, when EDIT mode is active): Opens a dialog with options (Clear image and shapes, Save view as JPG, Cancel).
+Esc (during Animation): Stop animation playback.
+Spacebar (during Animation): Pause/Resume animation playback.
+Visibility Management
+H: Show/Hide All Shapes.
+Description: Globally toggles the visibility of all drawn elements.
+Shift + H: Show/Hide MPoint Labels.
+Description: Toggles visibility of only text labels for MPoint points.
+Ctrl + H: Show/Hide MPoint Markers.
+Description: Toggles visibility of only graphical markers (circles/squares) of MPoint.
+Alt + H: Show/Hide MPoint Groups (Labels & Markers).
+Description: Toggles visibility of both MPoint markers and labels simultaneously.
+C: Show/Hide Shape Center Points.
+Description: Enables/disables the display of a small dot in the center of drawn lines, rectangles, etc.
+V: Show/Hide Shape Division Points.
+Description: Enables/disables the display of points dividing shape segments into equal parts (according to "Division Settings").
+Tool Selection
+R: Rectangle
+E: Ellipse
+T: Triangle
+U: Arc
+Z: Trapeze
+L: Line Single
+M: Line Point
+A: Arrow
+P: Polygon
+S: Spline
+W: Regular Polygon
+O: M.Point (Measurement Point)
+> (Greater than): Angle
+B: Brush
+X: Text
+Q: Dimension
+Tool Modifiers (When the respective tool is active)
+Line Point:
+Ctrl + LMB (while drawing): Snaps the drawn line segment to 15° increments.
+Alt + N: Sets no arrows for subsequent lines.
+Alt + E: Sets arrow at the end for subsequent lines.
+Alt + D: Sets arrows at both ends for subsequent lines.
+I: Invert Lasso selection (when Ctrl is held and Lasso polygon is being drawn).
+Spline:
+Alt + N: Sets no arrows for subsequent curves.
+Alt + E: Sets arrow at the end for subsequent curves.
+Alt + D: Sets arrows at both ends for subsequent curves.
+Arrow:
+Alt + D: Toggles drawing a double-headed arrow.
+M.Point:
+Alt + O: Switches to drawing circular markers.
+Alt + S: Switches to drawing square markers.
+T: Toggles label visibility for subsequent MPoint points.
+Angle Tool:
+I: Toggles display of inner angle.
+O: Toggles display of outer angle.
+Rectangle Tool:
+U: Toggles drawing rounded corners for the next drawn/placed rectangle.
+File & Scene Operations
+Ctrl + S: Save Scene (to .json or .svg file).
+Ctrl + L: Load Scene (replaces current).
+Ctrl + Shift + L: Load & Join Scene(s) (adds to current).
+ANIM Button: Setup/Run Scene Animation.
+LoadIMG Button: Load Background Image (Enters EDIT mode).
+Shift + C: Clear All Shapes (In LoadIMG mode: Keeps background).
+EDIT Button / RAlt+\\: Enter Edit Mode (Transparent BG).
+BOARD Button / Alt+\\: Enter Whiteboard Mode.
+TEMP Button / Alt+Shift+\\: Enter Temporary Drawing Mode.
+Shift+PrtSc: Save Screenshot (JPG/PNG) (Global Hotkey).
+Edit & Undo
+Ctrl + Z: Undo last action.
+Ctrl + Y or Ctrl + Shift + Z: Redo last undone action.
+Ctrl + C: Copy Selected (incl. groups if part of a group is selected).
+Ctrl + V: Paste copied shapes at cursor position (incl. groups).
+Ctrl + G: Group Selected Shapes.
+Ctrl + Shift + G: Ungroup Selected Shapes (applies only to user-created groups).
+Delete or Backspace: Delete Selected (incl. groups/parts of dimensions/angles if selected).
+Ctrl + Double LMB Click (on non-text, non-grouped shape): Delete Shape.
+Double LMB Click (on text shape): Edit Text Properties (Curve, Dim Suffix, Angle Format).
+Y: Send Selected Shape(s) to Back (will be drawn first).
+Selection & Manipulation
+LMB Click (on empty area): Start drawing new shape, place fixed-size shape, place MPoint, add polygon/line/dimension/angle point. If shapes are selected, clicking on empty area deselects them.
+LMB Click (on shape): Select shape. If shape is part of a group, the entire group is selected (except for special groups like dimensions or angles, where a specific part is selected).
+Ctrl + LMB Click (on shape): Add/Remove shape (or its group/part) from selection.
+LMB Click and Drag (on selected shape): Move selected shape(s).
+LMB Click and Drag (on resize handle of selected shape): Resize shape.
+Ctrl + A: Select All Visible Shapes.
+Line Point Tool + Ctrl + LMB Drag: Draw Lasso selection polygon. Finish with double LMB or RMB.
+RMB Click: Clear selection, finish polygon/line point drawing, cancel Lasso, cancel dimension/angle drawing.
+Arrow Keys: Nudge Selected (1px).
+Shift + Arrow Keys: Nudge Selected (10px).
++ or =: Scale Up Selected.
+Shift + + or Shift + =: Scale Up Selected (larger step).
+- (Minus): Scale Down Selected.
+Shift + - (Minus): Scale Down Selected (larger step).
+Alt + Left/Right Arrows: Rotate Selected (0.1° without Shift / 1° with Shift). Displays orientation angles.
+Ctrl + Left/Right Arrows: Rotate Selected (90°).
+Ctrl + Drag (while drawing Line/Arrow/Line Point): Constrain line angle to 15° increments.
+Shift + Drag (while drawing Rectangle/Ellipse): Maintain aspect ratio (draws square/circle).
+Shift + Drag (while resizing Rectangle/Ellipse): Maintain aspect ratio.
+Alt + J: Show/Hide angle deviation from axis for selected lines/arrows.
+W/H/Param Inputs: Set fixed size (Click canvas to place).
+Clear ('C') Button: Reset fixed size parameters for the adjacent tool to 0.
+Hatch Fill Shortcuts
+/ (Slash): Toggle Forward Slash Hatch.
+\ (Backslash): Toggle Backward Slash Hatch.
+| (Pipe, often Shift + \): Toggle Vertical Hatch.
+_ (Underscore, often Shift + -): Toggle Horizontal Hatch.
+Quick Drawing Parameter Input
+Shift + PageUp/Down: Adjust Transparency (%).
+Ctrl + PageUp/Down: Adjust Arrow Head Size.
+Alt + PageUp/Down: Adjust Brush Size.
+Ctrl + Shift + PageUp/Down: Cycle Line Style (iterates through list).
+Numpad + / - (when nothing is selected): Change Line Thickness by +/- 1px.
+Color Shortcuts (Normal Draw / TEMP Mode - Press key)
+0-9 (numeric keypad or main keyboard): Apply predefined color. If shapes are selected, changes selection color. If nothing is selected, changes current pen color. Colors correspond to:
+0: Black
+1: White
+2: Cyan
+3: Gray
+4: Red
+5: Orange
+6: Yellow
+7: Green
+8: Blue
+9: Magenta
+(See tooltips/docs for color mapping)
+BOARD / EDIT Mode Only
+0-9 (numeric keypad or main keyboard): Apply predefined color. If shapes are selected, changes selection color. If nothing is selected, changes current pen color (Edit Pen or Board Pen, depending on active mode).
+Alt + 0-9: Change BOARD Background Color (RGB components only, preserves Alpha).
+Ctrl + 0-9: Change BOARD Background Transparency (0 = Min Alpha(1), 9 = Opaque).
+(See tooltips/docs for color mapping)
+Selected Shape Properties (from Numpad)
+Numpad /: Toggle fill for selected fillable shape(s).
+Numpad . (Dot) or Numpad Del or Numpad *: Open color picker dialog for selected shape(s).
+RAlt + Numpad 0-9: Set Alpha transparency level for selected shape(s) (0 = 0% opacity, 9 = 100% opacity).
+Guide Lines Module Specific
+Alt+Shift+PageUp: Change Ruler Position (cycles: top-left, top-right, bottom-right, bottom-left).
+Ctrl+Alt+F9: Clear All Guide Lines.
+Ctrl+Alt+PageUp: Increase Guide Line Thickness.
+Ctrl+Alt+PageDown: Decrease Guide Line Thickness.
+Grid Module Specific
+Ctrl+Alt+F10: Show/Hide Grid (also main global shortcut).
+Ctrl+Alt+Up: Increase Number of Columns (in sections mode).
+Ctrl+Alt+Down: Decrease Number of Columns (in sections mode).
+Ctrl+Alt+Right: Increase Number of Rows (in sections mode).
+Ctrl+Alt+Left: Decrease Number of Rows (in sections mode).
+Ctrl+Alt+. (period): Decrease Grid X Offset.
+Ctrl+Alt+, (comma): Increase Grid X Offset.
+Ctrl+Alt+[ (opening square bracket): Decrease Grid Y Offset.
+Ctrl+Alt+] (closing square bracket): Increase Grid Y Offset.
+Ctrl+Alt+F11: Reset Grid Offset to (0,0).
+Ctrl+Alt+F12: Show/Hide Dots on Grid.
+
+Remember that some shortcuts may only work when the appropriate tool is active or when the program is in a specific mode.
