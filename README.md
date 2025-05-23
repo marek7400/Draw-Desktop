@@ -1,5 +1,7 @@
 in progress...
 
+![icon](images/DrawDesktop_icon.png)
+
 beginning 
 v1 and v3
 
