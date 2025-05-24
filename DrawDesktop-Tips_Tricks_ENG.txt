@@ -1,60 +1,67 @@
 Draw Desktop - Tips & Tricks
 
-Selecting shapes (for moving, rotating, resizing, changing color, etc.) like "angle," "dimension," "line point," "polygon," "spline": After drawing, switch to another shape tool (e.g., square) and then select the desired shape (Ctrl+click).
+1. Selecting (moving, rotating, resizing, changing color, etc.) for shapes: "angle", "dimension", "line point", "polygon", "spline".
+After drawing, switch to another shape, e.g., a square, and then select (Ctrl+click).
+	
+2. After selecting 1 or more objects (Ctrl+click), you can move/rotate/change their color/resize them as a group.
 
-After selecting one or more objects (Ctrl+click), you can move/rotate/change their color/resize them as a group.
+3. When drawing, it's advisable to enable 'Snapping mode' to "S2A" - this facilitates drawing by snapping lines to other objects.
 
-When drawing, it's recommended to enable 'Snapping mode' and set it to "S2A" – this makes drawing easier by snapping lines to other objects.
+4. You can group objects together (Ctrl+G) and ungroup them (Ctrl+Shift+G).
 
-You can group objects together (Ctrl+G) and ungroup them (Ctrl+Shift+G).
+5. After using COPY (Ctrl+C) on a selected shape, PASTE (Ctrl+V) will place the object at the mouse cursor's current position.
 
-After using COPY (Ctrl+C) on a selected shape, PASTE (Ctrl+V) will place the copy at the mouse cursor's current position.
+6. "Lasso select": Select with a polygonal line using "Line point" while holding "Ctrl".For inverse selection, enable "Invert".
 
-For "Lasso select" using a polygonal line: use the "Line point" tool and hold "Ctrl" while drawing the selection. To invert the selection, enable "Invert".
+7. Quickly exit "Zoom" mode - (Win+Esc).
 
-To quickly exit "Zoom" mode: (Win+Esc).
+8. If the program window obstructs your screen, minimize the program to the taskbar and use keyboard shortcuts. You can also disable "Show indicators".
+  A minimized window can be restored with (Ctrl+Home).
+9. To draw a RHOMBUS (diamond shape): enable "Reg. Polygon" and set 'Angles' (or number of vertices) to '4N'.
 
-If the program window obstructs your screen, minimize it to the taskbar and use keyboard shortcuts. You can also turn off "Show indicators". A minimized window can be restored with (Ctrl+Home).
+10. To draw a perfect circle: while drawing an "Ellipse", hold (Shift).
 
-To draw a RHOMBUS: select "Reg. Polygon" and set angles to '4N' (this likely means setting the number of vertices/sides to 4).
+11. To draw a perfect square: while drawing a "Rectangle", hold (Shift).
 
-To draw a perfect circle: hold (Shift) while drawing with the "Ellipse" tool.
+12. To draw a perfectly straight line/arrow: while drawing with "Line" (or similar tools), hold (Ctrl) (this enables auxiliary angle snapping at 15-degree increments).
 
-To draw a perfect square: hold (Shift) while drawing with the "Rectangle" tool.
+13. Arc pointing downwards or sideways: draw an arc, select it (Ctrl+click), and rotate it using (Ctrl+arrow keys) or (Alt+arrow keys).
 
-To draw a perfectly straight line/arrow: hold (Ctrl) while drawing with the "Line" tool (this constrains to auxiliary angles every 15 degrees).
+14. Text curved along an arc: in the text properties, enter an angle value in the 'Curve angle' field. For text curved downwards, enter a negative value.
 
-To make an arc point downwards or sideways: draw an arc, select it (Ctrl+click), and then rotate it using (Ctrl+arrow keys) or (Alt+arrow keys).
+15. Deleting shapes: after selecting a shape, press the (Del) key, OR hold (Ctrl) and quickly double-click the left mouse button on the shape.
 
-To curve text along an arc: in the text properties, enter an angle value in 'Curve angle'. For text curved downwards, enter a negative value.
-
-To delete shapes: select a shape and press (Del), OR hold (Ctrl) and quickly double-click the left mouse button on the shape.
-
-Slow movement (after selecting a shape): use arrow keys.
+16. Slow movement (after selecting a shape: use arrow keys).
 Fast movement: hold (Shift) while using arrow keys.
-
-Slow rotation (after selecting a shape): use (Alt+arrow keys).
+	
+17. Slow rotation (after selecting a shape: Alt+arrow keys).
 Fast rotation: hold (Alt+Shift+arrow keys).
 
-Symmetrical resizing (enlarging/reducing): select the shape and use the (+) and (-) keys.
+18. Symmetrical resizing (enlarging/shrinking): select the shape and use the (+) and (-) keys.
 
-To modify a shape: after selecting it, click and drag any of its green control points.
+19. Modifying a shape: after selecting the shape, click and drag any of its green control points.
 
-Editing the "angle" value: After drawing an angle, switch to another tool (e.g., "rectangle"), select the angle's text label, copy (Ctrl+C) and paste (Ctrl+V) it elsewhere. Delete the original angle text. You can now edit the copied text.
-Note: The copied value will not update if the angle's arms are moved (it becomes disconnected from the angle shape).
+20. Editing "angle" value: After drawing an angle, switch to another tool (e.g., "rectangle"). Select the angle's text label, copy it, and paste it elsewhere. Delete the original text. You can now edit the pasted text.
+Note: The copied value will not update if the angle's arms are moved (it becomes detached from the angle shape).
 
-You can draw a segment of an arc by changing a property value (e.g., from 180S) to something like 90S or 45S.
+21. You can draw an arc segment (a part of an arc) by changing a value like '180S' to, for example, '90S' or '45S'.
 
-For the "Arrow" tool, checking the "2x" checkbox (or a similar option for double-headed) will draw arrows with heads on both ends.
+22. For the "Arrow" tool, if you enable the '2x' checkbox (or a similar option for double arrowheads), it will draw double-sided arrows.
 
-"Line point" and "spline" tools have checkboxes to add arrowheads at their ends: single arrowhead (e.g., 1H, 1AH) or double arrowheads (e.g., 2H, 2AH).
+23. "Line point" and "spline" tools have checkboxes to draw arrowheads at their ends: single arrow (1H, 1AH) or double-sided arrows (2H, 2AH).
 
-The "Triangle" tool can draw an equilateral triangle (by entering a specific value/setting for side length) OR a right-angled triangle.
+24. The "Triangle" tool can be used to draw an equilateral triangle (by entering a specific side length value) OR a right-angled triangle.
 
-To take a screenshot within the program: (Shift+PrtSc).
+25. To take a screenshot within the program, use (Shift+PrtSc).
 
-After drawing dimension lines ("Dimensions" tool), if you switch to another shape tool, you can then select (Ctrl+click) the extension lines, arrowheads, or dimension text individually to move or edit them.
+26. After creating "Dimensions" (which include arrows), if you switch to another tool, you can then select (Ctrl+click) the dimension lines, arrowheads, or the dimension text individually to move or edit them.
 
-After loading an image using "LoadIMG" and making changes (or not), press (Esc). (Ctrl+Home) will bring up/restore the program window.
+27. After loading an image using "LoadIMG" and making any changes (or even if no changes are made), press (Esc).
+(Ctrl+Home) will bring the program window to the front.
 
-For recording screen activity or creating desktop animations, you can use free programs like ZoomIt (https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit) or ShareX (https://getsharex.com/). (It's also recommended to download ffmpeg: https://ffmpeg.org/)
+28. Before using SAVE (Ctrl+S), exit 'EDIT' mode.
+
+29. For recording desktop animations, you can use free programs like:
+ZoomIt (https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit)
+or ShareX (https://getsharex.com/)
+(It's also recommended to download ffmpeg: https://ffmpeg.org/ - often used by ShareX for video processing).
