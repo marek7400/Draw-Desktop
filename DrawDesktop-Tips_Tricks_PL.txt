@@ -1,0 +1,70 @@
+Draw Desktop - Tips & Tricks
+
+1. Zaznaczanie (przesuwanie, obracanie, zmiana rozmiaru, zmiana koloru...) dla kształtów :
+"angle", "dimension", "line point", "polygon", "spline"
+Po narysowaniu przełącz na inny kształt np. kwadrat i wtedy zaznacz (ctrl+klik)
+
+2. Po zaznaczeniu 1 lub więcej obiektów (ctrl+klik) można je grupowo przesuwać/obracać/zmieniać kolor/zmieniać rozmiar...
+
+3. Przy rysowaniu warto włączyć 'Snapping mode' na "S2A" - ułatwia to rysowanie przyciągając linie do innych obiektów
+
+4. Można grupować obiekty razem (Ctrl+G) i rozgrupować (Ctrl+Shift+G)    
+
+5. Po użyciu KOPIUJ (Ctrl+C) - na zaznaczonym kształcie- WKLEJ (Ctrl+V) działa w miejscu położenia myszki 
+
+6. "Lasso select" zaznaczanie linia wielokątną "Line point" i trzymaj "Ctrl".
+Odwrotne zaznaczenie-włącz "Invert"
+
+7. Szybkie wyjście z "Zoom" - (Win+esc)
+
+8. Okno programu zasłania ci ekran- zminimalizuj program do belki i używaj skrótów klawiaturowych. Wyłączyć też możesz "Show indicators". 
+Zminimalizowane okno można przywrócić (Ctrl+Home).
+
+9. Chcesz narysować ROMB - włącz "Reg. Polygon" i ustaw kąty na '4N"
+
+10. Chcesz narysować idealny okrąg - w czasie rysowania "Elipse" trzymaj (Shift)
+
+11. Chcesz narysować idealny kwadrat - w czasie rysowania "Rectangle" trzymaj (Shift)
+
+12. Chcesz narysować idealnie równą linię/strzałkę - w czasie rysowania "Line"... trzymaj (Ctrl) (kąty pomocnicze co 15 stopni)
+
+13. Łuk w dół lub w bok - narysuj łuk-zaznacz go (ctrl+klik) i obróć (Crtl+strzałka) (Alt+strzałka)
+
+14. Tekst wygięty w łuk - we właściwościach tekstu wpisz kąt w 'Curve angle'.
+Tekst wygięty w dół - wpisz wartość ujemną
+
+15. Usuwanie kształtów - po zaznaczeniu kształtu klawiszem (Del) lub trzymając (Ctrl) szybko 2x klik lewym przyciskiem myszki
+
+16. Przesuwanie wolne (po zaznaczeniu kształtu -strzałkami) 
+Szybkie przesuwanie-trzymaj (Shift)
+
+17. Obracanie wolne (po zaznaczeniu kształtu -Alt+strzałki) 
+Szybkie obracanie-trzymaj (Alt+Shift+strzałki)
+
+18. Symetryczne powiększanie/pomniejszanie-zaznacz kształt i użyj klawiszy (+) (-)
+
+19. Modyfikacja kształtu - po zaznaczeniu kształtu - chwyć dowolny zielony punkt i przesuń go
+
+20. Edycja wartości "angle" - po narysowaniu kąta, przełącz na kształt np. "rectangle", zaznacz tekst kąta, skopiuj i wklej w inne miejsce, oryginalna wartość skasuj, skopiowaną wartość edytuj
+Uwaga: skopiowana wartość się nie zmieni po przesunięciu ramion kąta (jest wtedy odłączona od kształtu kąta)
+
+21. Możesz narysować kawałek łuku zmieniając wartość 180S na np. 90S albo 45S
+
+22. "Arrow" po załączeniu checkboxa 2x - rysuje obustronne strzałki
+
+23. "Line point" i "spline" - mają checkboxy do przełączania czy rysować ich końcówki z: jedną strzałką-obustronną strzałką (1H, 2H) (1AH, 2AH)
+
+24. "Triangle" można rysować jako równoboczny wpisując wartość LUB prostokątny
+                       
+25. Zrzut ekranu w programie można zrobić (Shift+PrtSC)
+
+26. Po narysowaniu strzałek w "Dimensions" jeżeli przełączysz na inny kształt możesz zaznaczyć (ctrl+klik) osobno prowadnice/strzałki/wymiary i je przesuwać/edytować
+
+27. Po załadowaniu obrazka "LoadIMG" i dokonaniu zmian (lub nie) naciśnij (esc).
+(ctrl+home)-wywoła okno programu
+
+28. Do nagrywania animacji na pulpicie możesz użyć darmowych programów 
+ZoomIt (https://learn.microsoft.com/pl-pl/sysinternals/downloads/zoomit) 
+lub ShareX (https://getsharex.com/)
+(ściągnij też ffmpeg https://ffmpeg.org/) 
+
