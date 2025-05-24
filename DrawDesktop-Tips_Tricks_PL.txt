@@ -63,7 +63,9 @@ Uwaga: skopiowana wartość się nie zmieni po przesunięciu ramion kąta (jest 
 27. Po załadowaniu obrazka "LoadIMG" i dokonaniu zmian (lub nie) naciśnij (esc).
 (ctrl+home)-wywoła okno programu
 
-28. Do nagrywania animacji na pulpicie możesz użyć darmowych programów 
+28. przed użyciem SAVE (ctrl+S) wyjdź z tryby EDIT. 
+
+29. Do nagrywania animacji na pulpicie możesz użyć darmowych programów 
 ZoomIt (https://learn.microsoft.com/pl-pl/sysinternals/downloads/zoomit) 
 lub ShareX (https://getsharex.com/)
 (ściągnij też ffmpeg https://ffmpeg.org/) 
