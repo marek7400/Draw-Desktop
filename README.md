@@ -206,3 +206,7 @@ add EXIT button, add "dark mode" and fix end process on exit)
 
 ![v155 in progress](images/dark_mode.png)
 
+DrawDesktop
+
+![DrawDesktop.jpg](images/DrawDesktop.jpg)
+
