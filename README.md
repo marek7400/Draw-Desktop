@@ -1,5 +1,3 @@
-in progress...
-
 ![icon](images/DrawDesktop_icon.png)
 
 ************************************
